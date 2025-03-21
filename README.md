@@ -22,3 +22,8 @@ The goal of this project is to empower artists by providing a transparent and de
 ## Contract Address
 0x7371019836Dc5240c0D9E027fcAA585D776D5B2F
 <img width="1436" alt="image" src="https://github.com/user-attachments/assets/7c428b41-d0df-4df6-9431-88a014bcddd3" />
+
+## Frontend
+<img width="1438" alt="image" src="https://github.com/user-attachments/assets/25382779-21d0-4b50-bbbf-18837c8694f7" />
+
+
