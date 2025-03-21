@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body - Dark Blue Theme */
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #010d1d; /* dark navy */
+    color: #C9D1D9; /* soft white */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #021025;
+    padding: 20px 40px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #30363D;
+    animation: slideDown 0.5s ease forwards;
+  }
+  
+  header h1 {
+    color: #58A6FF; /* bright blue accent */
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  #connectWallet,
+  button {
+    background-color: #238636; /* deep green */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  #connectWallet:hover,
+  button:hover {
+    background-color: #2EA043;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.4);
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+    flex: 1;
+    gap: 20px;
+  }
+  
+  /* Cards */
+  .card {
+    position: relative;
+    background-color: #0a0f1a; /* dark blue shade */
+    border: 1px solid #30363D;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    padding: 24px;
+    width: 340px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  .card h2 {
+    color: #58A6FF; /* neon blue */
+    margin-bottom: 16px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.2);
+  }
+  
+  /* Dynamic Glow Follows Cursor */
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle 200px at var(--x, 50%) var(--y, 50%),
+      rgba(0, 191, 255, 0.25),
+      transparent 60%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    z-index: 0;
+  }
+  
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  /* Input Fields */
+  input[type="text"],
+  input[type="number"] {
+    background-color: #0D1117;
+    color: #C9D1D9;
+    border: 1px solid #30363D;
+    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 16px;
+    width: 100%;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #58A6FF;
+    box-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+  }
+  
+  /* Listings Section */
+  #listings {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  .listing-item {
+    background-color: #1a1f2a;
+    border: 1px solid #30363D;
+    padding: 16px;
+    border-radius: 6px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .listing-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.4);
+  }
+  
+  /* Checkbox container */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
