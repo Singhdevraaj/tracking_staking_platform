@@ -20,5 +20,5 @@ The goal of this project is to empower artists by providing a transparent and de
 - **Smart Contract-based Transactions**: All transactions are secure and automated through smart contracts, ensuring transparency.
 
 ## Contract Address
-0x84f999dBac38858C40872759bc423328277a6157
-<img width="1439" alt="image" src="https://github.com/user-attachments/assets/c57f8ddc-7d40-480f-aacd-96fce44e6f89" />
+0x7371019836Dc5240c0D9E027fcAA585D776D5B2F
+<img width="1436" alt="image" src="https://github.com/user-attachments/assets/7c428b41-d0df-4df6-9431-88a014bcddd3" />
